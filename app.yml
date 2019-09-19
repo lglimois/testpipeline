@@ -1,8 +1,8 @@
 ---
 - hosts: "toto"
   tasks:
-  -name: "test dir"
-   file:
-     path: "/toto"
-     state: absent
+  - name: "test dir"
+    file:
+      path: "/toto"
+      state: absent
      
