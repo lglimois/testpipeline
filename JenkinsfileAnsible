@@ -1,0 +1,14 @@
+node{
+   stage('git') {
+    echo 'git'
+    checkout scm
+ }   
+ stage('Deploiement Ansible') {
+    echo 'Deploiement Ansible'
+    ansiblePlaybook (
+      colorized: true, 
+      become: true,
+      playbook: 'ansible-playbooks/mariadb.yml'
+   )
+ }
+}
