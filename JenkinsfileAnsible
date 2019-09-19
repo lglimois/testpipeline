@@ -5,11 +5,13 @@ node('ansible'){
  }   
  stage('Deploiement Ansible') {
     echo 'Deploiement Ansible'
-    ansiblePlaybook (
-      colorized: true, 
-      become: true,
-      playbook: 'app.yml',
-      inventory: 'inventory'
-   )
+    ansiColor('xterm') {
+      ansiblePlaybook (
+        colorized: true, 
+        become: true,
+        playbook: 'app.yml',
+        inventory: 'inventory'
+     )
+   }
  }
 }
