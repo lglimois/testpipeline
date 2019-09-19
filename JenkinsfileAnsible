@@ -8,7 +8,7 @@ node('ansible'){
     ansiblePlaybook (
       colorized: true, 
       become: true,
-      playbook: 'app.yml'
+      playbook: 'app.yml',
       inventory: 'inventory'
    )
  }
