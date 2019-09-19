@@ -1,5 +1,5 @@
 ---
-- hosts: "toto"
+- hosts: "webservers"
   tasks:
   - name: "test dir"
     file:
