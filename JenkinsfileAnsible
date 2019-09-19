@@ -9,6 +9,7 @@ node('ansible'){
       colorized: true, 
       become: true,
       playbook: 'app.yml'
+      inventory: 'inventory'
    )
  }
 }
