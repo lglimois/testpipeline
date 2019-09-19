@@ -8,7 +8,7 @@ node{
     ansiblePlaybook (
       colorized: true, 
       become: true,
-      playbook: 'ansible-playbooks/mariadb.yml'
+      playbook: 'app.yml'
    )
  }
 }
