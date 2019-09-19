@@ -1,4 +1,4 @@
-node{
+node('ansible'){
    stage('git') {
     echo 'git'
     checkout scm
